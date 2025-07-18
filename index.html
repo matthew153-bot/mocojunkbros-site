@@ -2,80 +2,145 @@
 <html lang="en">
 <head>
   <meta charset="UTF-8" />
-  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
-  <title>MoCo Junk Bros</title>
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <meta name="description" content="Junk removal in Montgomery County, MD by MoCo Junk Bros. Fast, reliable, and local." />
+  <title>MoCo Junk Bros | Junk Removal in Montgomery County, MD</title>
   <style>
     body {
       margin: 0;
-      font-family: Arial, sans-serif;
+      font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
       line-height: 1.6;
+      background-color: #f9f9f9;
+      color: #333;
     }
     header {
-      background-color: #2d2d2d;
+      background-color: #2e8b57;
       color: white;
-      padding: 20px 0;
+      padding: 1rem;
       text-align: center;
     }
-    .section {
-      padding: 40px 20px;
-      text-align: center;
+    nav {
+      display: flex;
+      justify-content: center;
+      gap: 1.5rem;
+      margin-top: 0.5rem;
     }
-    .about {
-      background-color: #f4f4f4;
+    nav a {
+      color: white;
+      text-decoration: none;
+      font-weight: bold;
+    }
+    section {
+      padding: 2rem 1rem;
+      max-width: 900px;
+      margin: auto;
+    }
+    .hero {
+      background: url('https://via.placeholder.com/1200x400') no-repeat center center/cover;
+      color: white;
+      text-align: center;
+      padding: 5rem 1rem;
+    }
+    .hero h1 {
+      font-size: 2.5rem;
+      margin-bottom: 1rem;
+    }
+    .hero a {
+      background-color: #ffcc00;
+      color: #333;
+      padding: 0.75rem 1.5rem;
+      font-weight: bold;
+      text-decoration: none;
+      border-radius: 5px;
+    }
+    .services ul {
+      list-style-type: disc;
+      padding-left: 1.5rem;
     }
     .gallery {
       display: flex;
       flex-wrap: wrap;
+      gap: 1rem;
       justify-content: center;
-      gap: 15px;
-      background: #fff;
+      margin-top: 2rem;
     }
     .gallery img {
       width: 100%;
       max-width: 400px;
       border-radius: 8px;
-      box-shadow: 0 0 8px rgba(0, 0, 0, 0.2);
+      box-shadow: 0 0 5px rgba(0,0,0,0.1);
     }
-    .call {
-      background-color: #2d2d2d;
+    footer {
+      background-color: #2e8b57;
       color: white;
-      padding: 30px 20px;
+      text-align: center;
+      padding: 1rem;
     }
-    .call a {
-      color: #fff;
-      font-size: 1.5em;
-      text-decoration: none;
-      font-weight: bold;
+    @media (max-width: 600px) {
+      .hero h1 {
+        font-size: 1.8rem;
+      }
     }
   </style>
 </head>
 <body>
+
   <header>
     <h1>MoCo Junk Bros</h1>
-    <p>Fast & Friendly Junk Removal</p>
+    <nav>
+      <a href="#about">About</a>
+      <a href="#services">Services</a>
+      <a href="#area">Service Area</a>
+      <a href="#pricing">Pricing</a>
+      <a href="#gallery">Gallery</a>
+    </nav>
+    <p><a href="tel:3017856750" style="color: #ffcc00;">📞 Call Now: (301) 785-6750</a></p>
   </header>
 
-  <section class="section about">
+  <section class="hero">
+    <h1>Fast & Friendly Junk Removal</h1>
+    <a href="tel:3017856750">📞 Call Now</a>
+  </section>
+
+  <section id="about">
     <h2>About Us</h2>
-    <p>
-      Our names are Matthew and Jake and we decided to start a junk removal business this summer.
-      We are both former students from Quince Orchard High School and are now rising sophomores in college
-      at JMU and Salisbury. We built our own trailer from scratch out of an old boat trailer and are ready
-      to use it to help remove your junk.
-    </p>
+    <p>Our names are Matthew and Jake and we decided to start a junk removal business this summer. We are both former students from Quince Orchard High School and are now rising sophomores in college at JMU and Salisbury. We built our own trailer from scratch out of an old boat trailer and are ready to use it to help remove your junk.</p>
   </section>
 
-  <section class="section gallery">
+  <section id="services" class="services">
+    <h2>What We Do</h2>
+    <ul>
+      <li>Junk & clutter removal</li>
+      <li>Furniture hauling</li>
+      <li>Garage cleanouts</li>
+      <li>Moving-related cleanups</li>
+      <li>Yard debris and small construction waste</li>
+    </ul>
+  </section>
+
+  <section id="area">
+    <h2>Service Area</h2>
+    <p>We serve all of Montgomery County, Maryland — including Rockville, Gaithersburg, Bethesda, Germantown, and surrounding areas. If you’re nearby, we’ve got you covered.</p>
+  </section>
+
+  <section id="pricing">
+    <h2>Pricing</h2>
+    <p>We keep it simple. Most jobs are priced based on how much space your junk takes up in our trailer. Just send us a photo or give us a call for a quick free estimate.</p>
+  </section>
+
+  <section id="gallery">
     <h2>Our Work</h2>
-    <img src="gallery/trailer_before_after.jpg" alt="Before and after trailer build" />
-    <img src="gallery/trailer_loaded1.jpg" alt="Trailer loaded with junk 1" />
-    <img src="gallery/trailer_loaded2.jpg" alt="Trailer loaded with junk 2" />
-    <img src="gallery/trailer_on_road.jpg" alt="Trailer being towed" />
+    <div class="gallery">
+      <img src="gallery/trailer_before_after.jpg" alt="Before and after trailer build">
+      <img src="gallery/trailer_loaded1.jpg" alt="Trailer loaded with junk 1">
+      <img src="gallery/trailer_loaded2.jpg" alt="Trailer loaded with junk 2">
+      <img src="gallery/trailer_on_road.jpg" alt="Trailer being towed">
+    </div>
   </section>
 
-  <section class="call">
-    <p>Ready to get rid of that junk?</p>
-    <p><a href="tel:3017856750">Call Us: (301) 785-6750</a></p>
-  </section>
+  <footer>
+    <p>© 2025 MoCo Junk Bros | Montgomery County, MD</p>
+  </footer>
+
 </body>
 </html>
